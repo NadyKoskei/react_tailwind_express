@@ -57,18 +57,29 @@ Optional ESLint configuration generated to match the chosen template.
 used to store static files 
 (files that don't get processed by vite, don't go though building and are servrd exactly as they are.
 Files in public are accessed from the root path.
-      
+    (The / represents the root of your website.
+    <img src="/public/logo.png" /> ❌
+         Instead, you access it from the root:
+    <img src="/logo.png" /> ✅
+        Because Vite automatically treats everything inside public as if it lives at the root of your website.
 
 ## src/: 
 Application source code. This is where you write React components, styles, and other JS/TS code.
    ### main.jsx:
     App entry file; it mounts the root React component into the DOM and sets up providers.
+    It is the bridge btwn html and react via the (root div that is the single container where React mounts and controls your entire application.
+          in line 6 👉 “Find the div with id 'root'.”
+                    👉 “Take my entire React app and put it inside that div.”
    ### App.jsx: 
-   Example root React component and the typical place to start building your UI.
+   It is the root component and the typical place to start building your UI.
    ### index.css / App.css: 
    Example CSS files for global and component styles. Vite supports importing these directly in JS/JSX.
    ### assets/:
     Folder for images and other module-imported assets referenced from the `src` code.
+
+   ### components folder:
+   ### pages folder:
+   ### hooks 
 
 ## node_modules/:  
 Contains installed packages; created when you run `npm install` or `yarn`.
