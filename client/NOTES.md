@@ -72,6 +72,7 @@ Application source code. This is where you write React components, styles, and o
                     👉 “Take my entire React app and put it inside that div.”
    ### App.jsx: 
    It is the root component and the typical place to start building your UI.
+   
    ### index.css / App.css: 
    Example CSS files for global and component styles. Vite supports importing these directly in JS/JSX.
    ### assets/:
