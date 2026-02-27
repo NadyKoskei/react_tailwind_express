@@ -91,4 +91,33 @@ Commonly created/updated by the package manager to ignore `node_modules` and loc
 it is a file used to specify which content should not be tracked by version controle.
 
 
+NB... 
+
+ components
+
+ ```rendering
+ How React takes JSX/element trees and turns them into DOM nodes.
+In React 18+ you usually call `createRoot(rootEl).render(<App />)` or
+`ReactDOM.render` in older versions. Rendering is what updates the
+screen when state or props change.
+turning component code into UI elements that appear on the screen.
+```
+
+``` props
+Short for “properties”. They are the read‑only inputs you pass to a component, similar to function arguments. Props allow parent components to configure children and share data.
+```
+
+ ```hooks
+ Special functions provided by React (like `useState`, `useEffect`,`useContext`, etc.) that let you “hook into” component lifecycle and state from functional components. 
+```
+
+```StrictMode 
+is a special wrapper component from React that helps you find potential problems in your app during development.
+```
+
+```Modules
+are separate JavaScript files that contain code (functions, variables, classes) and can export it so other files can import and use it. For organisation, reusability, collaboration.
+```
+
+
 
