@@ -23,7 +23,7 @@ const RegForm = () => {
     });
   };
 
-  //submit handler to
+  //submit handler to collect data when the inputs in the form is submitted
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -31,9 +31,10 @@ const RegForm = () => {
 
     try {
       const response = await fetch(
+        // base URL together with the End point
         "https://charity-minds.onrender.com/api/v1/auth/register",
         {
-          method: "POST",
+          method: "POST",  //the action you want to perform
           headers: {
             "Content-Type": "application/json",
           },
@@ -52,7 +53,7 @@ const RegForm = () => {
   return (
     <>
       <div className="pb-4 pl-3 pr-3 mb-10 flex flex-col justify-center items-center">
-        <h1>Register to Charity Minds</h1>
+        <h1 className="text-center font-bold text-2xl">Register to Charity Minds</h1>
 
         <form
           onSubmit={handleSubmit}
